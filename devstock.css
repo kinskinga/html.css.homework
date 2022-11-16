@@ -24,10 +24,10 @@ body {
 .logo-header img {
   padding-right: 10px;
 }
-.header.menu.desktop {
+.nav-bar {
   display: flex;
 }
-.header.menu.desktop ul {
+.nav-bar ul {
   display: flex;
 }
 li {
