@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;900&family=Space+Mono&display=swap");
+
+body {
+  background-color: #222426;
+  font-family: Lexend Deca;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+.header-wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 30px;
+}
+.logo-header {
+  display: flex;
+  align-items: center;
+}
+.logo-header img {
+  padding-right: 10px;
+}
+.header.menu.desktop {
+  display: flex;
+}
+.header.menu.desktop ul {
+  display: flex;
+}
+li {
+  display: inline-block;
+  margin-left: 30px;
+  color: white;
+  font-size: 16px;
+}
+.academy-wrap {
+  display: flex;
+  padding-top: 50px;
+  margin-top: 70px;
+  padding-left: 30px;
+}
+.academy-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-right: 50px;
+  color: white;
+  font-size: 24px;
+}
+.academy-container h2 {
+  font-size: 50px;
+}
+.container1 {
+  display: flex;
+  flex-direction: column;
+}
+.logo-academy {
+  position: absolute;
+  top: -130px;
+  left: -170px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  transform: scale(0.17);
+}
+.academy-animation {
+  padding-left: 20px;
+}
+.academy-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.academy-button {
+  background-color: #222426;
+  border: 3px solid white;
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 20px;
+}
+.zapisz-sie-na-kurs {
+  background-color: white;
+  color: #222426;
+}
+.czy-to-dla-ciebie {
+  color: white;
+}
+.enroll-wrap {
+  background-color: #f64746;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+
+.enroll-line {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+.enroll-text {
+  width: 35%;
+}
+h1 {
+  font-size: 90px;
+  font-weight: 900;
+  width: 40%;
+  margin: 0;
+  margin-top: 50px;
+}
+.arrow {
+  width: 25%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.enroll-link a {
+  font-size: 28px;
+  font-weight: 800;
+  text-decoration: none;
+  color: black;
+}
+.underline-enroll {
+  border: 1px solid black;
+  height: 2px;
+}
+
+.contact-wrap {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+.contact-title {
+  width: 50%;
+  padding: 30px;
+}
+.contact-title h3 {
+  font-size: 50px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.contact-title p {
+  font-size: 14px;
+  padding-top: 10px;
+}
+.contact-form {
+  width: 50%;
+  padding: 30px;
+  display: flex;
+}
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-right: 50px;
+  box-sizing: border-box;
+}
+.item {
+  border: 3px solid black;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.contact-form label {
+  position: absolute;
+  padding-left: 15px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.test {
+  display: flex;
+  flex-direction: column;
+}
+.test2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.nameitem {
+  flex-grow: 1;
+}
+.contact-button {
+  background-color: #222426;
+  color: white;
+  border: none;
+  height: 50px;
+  font-weight: 800;
+  font-size: 20px;
+  font-family: Lexend Deca;
+}
+.details-wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+.details-wrap h3 {
+  font-weight: 900;
+  font-size: 50px;
+  width: 40%;
+  color: white;
+}
+.description {
+  display: flex;
+  /* flex-wrap: wrap; dodaj to przy media queries! */
+}
+.nauka {
+  width: 50%;
+}
+.mentoring {
+  width: 50%;
+}
+.description-box {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-right: 120px;
+}
+.description-box ul {
+  padding: 0px;
+  display: block;
+  list-style-type: disc;
+}
+.description-box li {
+  margin-left: 0;
+  font-weight: 900;
+  display: block;
+}
+.description-box p {
+  font-weight: 300;
+}
+hr {
+  width: 100%;
+}
+.description-box h5 {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+}
+span {
+  font-family: Space Mono;
+}
+.czytaj {
+  width: fit-content;
+  color: white;
+  font-size: 24px;
+}
+.czytaj div {
+  border: 1px solid white;
+  height: 2px;
+  margin-top: 0;
+}
+.czytaj h4 {
+  margin-bottom: 10px;
+}
