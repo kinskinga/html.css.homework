@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Devstock website</title>
     <link rel="stylesheet" href="./devstock.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <div class="container">
@@ -23,7 +27,9 @@
             <li>Kontakt</li>
           </ul>
         </div>
-        <div class="hamburger"></div>
+        <div class="hamburger">
+          <img src="/images/Mask Group.png" />
+        </div>
       </div>
       <div class="academy-wrap">
         <div class="container1">
@@ -53,6 +59,7 @@
           </div>
         </div>
         <div class="academy-animation">
+          <div class="square"></div>
           <img src="/images/Group 5482.png" />
         </div>
       </div>
@@ -88,49 +95,35 @@
         <div class="contact-form">
           <form method="post">
             <div class="inputs">
-              <div class="name-group test2">
-                <label>Imię</label>
-                <input
-                  class="item nameitem"
-                  name="firstname"
-                  placeholder="Twoje imię"
-                />
-                <label>Nazwisko</label>
-                <input
-                  class="item nameitem"
-                  name="lastname"
-                  placeholder="Twoje nazwisko"
-                />
-              </div>
-              <div class="test">
-                <label><span>*</span>Email</label>
-                <input
-                  class="item email"
-                  name="email"
-                  type="email"
-                  placeholder="Twój Email"
-                />
-              </div>
-              <div class="phone-number-group test2">
-                <div>
-                  <label>Telefon</label>
-                  <input
-                    class="item nameitem"
-                    name="phone-number"
-                    placeholder="+48 123456789"
-                    type="number"
-                  />
+              <div class="name-group">
+                <div class="input-wrapper">
+                  <label>Imię</label>
+                  <input name="firstname" placeholder="Twoje imię" />
                 </div>
-                <div>
-                  <label>Poziom zaawansowania</label>
-                  <select name="level" class="contact-select item nameitem">
+                <div class="input-wrapper">
+                  <label>Nazwisko</label>
+                  <input name="lastname" placeholder="Twoje nazwisko" />
+                </div>
+              </div>
+              <div class="input-wrapper">
+                <label><span>*</span>Email</label>
+                <input name="email" type="email" placeholder="Twój Email" />
+              </div>
+              <div class="phone-level-group">
+                <div class="input-wrapper">
+                  <label>Telefon</label>
+                  <input name="phone-number" placeholder="+48 123456789" />
+                </div>
+                <div class="input-wrapper">
+                  <label id="level-label">Poziom zaawansowania</label>
+                  <select name="level">
                     <option value="Zaczynam od zera">Zaczynam od zera</option>
                     <option value="umiem html">Umiem html</option>
                     <option value="umiem css">Umiem css</option>
                   </select>
                 </div>
               </div>
-              <div class="test">
+              <div class="input-wrapper">
                 <label>Pakiet, który Cię interesuje</label>
                 <select class="item" name="package" class="contact-select">
                   <option value="Basic">Basic</option>

@@ -3,6 +3,7 @@
 body {
   background-color: #222426;
   font-family: Lexend Deca;
+  margin: 0;
 }
 .container {
   display: flex;
@@ -17,6 +18,7 @@ body {
   align-items: center;
   padding-left: 30px;
 }
+
 .logo-header {
   display: flex;
   align-items: center;
@@ -24,9 +26,14 @@ body {
 .logo-header img {
   padding-right: 10px;
 }
+.hamburger {
+  display: none;
+}
+
 .nav-bar {
   display: flex;
 }
+
 .nav-bar ul {
   display: flex;
 }
@@ -42,6 +49,7 @@ li {
   margin-top: 70px;
   padding-left: 30px;
 }
+
 .academy-container {
   display: flex;
   flex-direction: column;
@@ -51,9 +59,11 @@ li {
   color: white;
   font-size: 24px;
 }
+
 .academy-container h2 {
   font-size: 50px;
 }
+
 .container1 {
   display: flex;
   flex-direction: column;
@@ -66,9 +76,7 @@ li {
   margin-bottom: 50px;
   transform: scale(0.17);
 }
-.academy-animation {
-  padding-left: 20px;
-}
+
 .academy-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -112,6 +120,7 @@ li {
   flex-wrap: wrap;
   padding-bottom: 50px;
 }
+
 .enroll-text {
   width: 35%;
 }
@@ -143,12 +152,17 @@ h1 {
   display: flex;
   justify-content: center;
 }
+
 .contact-title {
   width: 50%;
   padding: 30px;
+  padding-right: 50px;
+  box-sizing: border-box;
+  margin-top: 50px;
 }
+
 .contact-title h3 {
-  font-size: 50px;
+  font-size: 45px;
   font-weight: 600;
   margin-top: 30px;
   margin-bottom: 0;
@@ -161,39 +175,63 @@ h1 {
   width: 50%;
   padding: 30px;
   display: flex;
+
+  margin: 40px 0;
 }
+
 form {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-left: 50px;
   margin-right: 50px;
   box-sizing: border-box;
 }
-.item {
-  border: 3px solid black;
-  padding: 10px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+.input-wrapper {
+  position: relative;
+  display: flex;
+  margin-bottom: 40px;
+}
+.input-wrapper input {
+  border: 2px solid #222426;
+  box-sizing: border-box;
+  height: 45px;
+  flex-grow: 1;
 }
 .contact-form label {
   position: absolute;
   padding-left: 15px;
-  font-size: 16px;
+  font-size: 10x;
   font-weight: 700;
+  top: -22px;
+  left: -14px;
 }
-.test {
-  display: flex;
-  flex-direction: column;
-}
-.test2 {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-}
-.nameitem {
+
+.input-wrapper select {
+  border: 2px solid #222426;
+  box-sizing: border-box;
+  height: 45px;
   flex-grow: 1;
 }
+.name-group {
+  display: flex;
+}
+.name-group .input-wrapper {
+  flex-grow: 1;
+}
+.name-group .input-wrapper:first-of-type {
+  margin-right: 15px;
+}
+.phone-level-group {
+  display: flex;
+}
+
+.phone-level-group .input-wrapper {
+  flex-grow: 1;
+}
+.phone-level-group .input-wrapper:first-of-type {
+  margin-right: 15px;
+}
+
 .contact-button {
   background-color: #222426;
   color: white;
@@ -216,7 +254,6 @@ form {
 }
 .description {
   display: flex;
-  /* flex-wrap: wrap; dodaj to przy media queries! */
 }
 .nauka {
   width: 50%;
@@ -224,6 +261,7 @@ form {
 .mentoring {
   width: 50%;
 }
+
 .description-box {
   display: flex;
   flex-direction: column;
@@ -266,4 +304,127 @@ span {
 }
 .czytaj h4 {
   margin-bottom: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .header-wrap {
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .hamburger {
+    display: flex;
+    align-self: flex-end;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .nav-bar {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .academy-wrap {
+    flex-direction: column;
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .academy-animation {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .academy-container {
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .academy-container h2 {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .enroll-line {
+    flex-direction: column;
+    width: 100%;
+    padding-left: 0;
+    align-items: flex-start;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .contact-wrap {
+    flex-direction: column;
+    width: 100%;
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .contact-title {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .contact-form {
+    width: 100%;
+    padding-left: 30px;
+  }
+}
+@media only screen and (max-width: 1040px) {
+  #level-label {
+    top: -40px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .name-group {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .phone-level-group {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .name-group .input-wrapper:first-of-type {
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .phone-level-group .input-wrapper:first-of-type {
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .description {
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .nauka {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .mentoring {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .description-box {
+    width: 100%;
+    margin-right: 0px;
+  }
 }
